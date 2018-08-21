@@ -88,6 +88,29 @@
           </fieldset>
           <button class="button button-submit" type="submit">Показать</button>
         </form>
+        <fieldset class="sorting">
+          <legend>Сортировать</legend>
+          <ul>
+            <li>
+              <a href="#">По цене</a>
+            </li>
+            <li>
+              <a href="#">По типу</a>
+            </li>
+            <li>
+              <a href="#">По названию</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#">Больше</a>
+            </li>
+            <li>
+              <a href="#">Меньше</a>
+            </li>
+          </ul>
+        </fieldset>
+        <!--Не уверен что правильно понял, как сделать сортировку-->
       </section>
       <section class="catalog">
         <h2 class="vissually-hidden">Список готовых шаблонов</h2>
@@ -97,7 +120,7 @@
               <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
               <div>
                 <h3>
-                  <a href="catalog-item.html">Sedona</a>
+                <a href="catalog-item.html">Sedona</a>
                 </h3>
                 <p class="catalog-item-title">Информационный сайт для туристов</p>
                 <p class="catalog-item-price">9 900</p>
@@ -109,7 +132,7 @@
               <img src="img/img-pink.jpg" width="360" height="576" alt="Pink">
               <div>
                 <h3>
-                  <a href="catalog-item.html">Pink app</a>
+                <a href="catalog-item.html">Pink app</a>
                 </h3>
                 <p class="catalog-item-title">Продуктовый лендинг приложение для IOS и Android</p>
                 <p class="catalog-item-price">9 900</p>
@@ -121,7 +144,7 @@
               <img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
               <div>
                 <h3>
-                  <a href="catalog-item.html">Barbershop</a>
+                <a href="catalog-item.html">Barbershop</a>
                 </h3>
                 <p class="catalog-item-title">Сайт салона красоты. Для мужчин, да.</p>
                 <p class="catalog-item-price">9 900</p>
@@ -133,7 +156,7 @@
               <img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka">
               <div>
                 <h3>
-                  <a href="catalog-item.html">Mishka</a>
+                <a href="catalog-item.html">Mishka</a>
                 </h3>
                 <p class="catalog-item-title">Интернет-магазин вязаных игрушек</p>
                 <p class="catalog-item-price">9 900</p>
@@ -145,7 +168,7 @@
               <img src="img/img-aplus.jpg" width="360" height="576" alt="A Plus">
               <div>
                 <h3>
-                  <a href="catalog-item.html">A Plus</a>
+                <a href="catalog-item.html">A Plus</a>
                 </h3>
                 <p class="catalog-item-title">Лендинг курсов повышения квалификации</p>
                 <p class="catalog-item-price">9 900</p>
@@ -157,7 +180,7 @@
               <img src="img/img-kvast.jpg" width="360" height="576" alt="Кваст">
               <div>
                 <h3>
-                  <a href="catalog-item.html">Кваст</a>
+                <a href="catalog-item.html">Кваст</a>
                 </h3>
                 <p class="catalog-item-title">Промо-сайт производителя крафтового кваса</p>
                 <p class="catalog-item-price">9 900</p>
@@ -182,52 +205,57 @@
       </section>
     </main>
     <footer class="main-footer">
-      <div class="contacts" id="contacts">
-        Nёrds design studio
-        <p>191186, Санкт-Петербург,<br>
-          ул. Б. Конюшенная, д. 19/8<br>
+      <section class="location">
+        <div class="contacts">
+          Nёrds design studio
+          <p>191186, Санкт-Петербург,<br>
+            ул. Б. Конюшенная, д. 19/8<br>
           Тел: +7(812)275-75-75</p>
-        <button class="button-red">Напишите нам</button>
-        <img src="img/map.jpg" width="1440" height="416"
-        alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8. Тел: +7(812)275-75-75">
-      </div>
-      <div class="footer-social">
-        <b>Давайте дружить!</b>
-        <ul>
-          <li>
-            <a class="social-button" href="#">Вконтакте</a>
-          </li>
-          <li>
-            <a class="social-button" href="#">Фейсбук</a>
-          </li>
-          <li>
-            <a class="social-button" href="#">Инстаграм</a>
-          </li>
-        </ul>
-      </div>
-      <div class="promo">
-        <h3>Давайте дружить, это выгодно!</h3>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
-      </div>
+          <a href="#" class="button-red">Напишите нам</a>
+        </div>
+        <div class="map">
+          <img src="img/map.jpg" width="1440" height="416"
+          alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8. Тел: +7(812)275-75-75">
+        </div>
+      </section>
+      <section class="social">
+        <div class="social">
+          <ul>
+            <li>
+              <a class="social-button" href="#">Вконтакте</a>
+            </li>
+            <li>
+              <a class="social-button" href="#">Фейсбук</a>
+            </li>
+            <li>
+              <a class="social-button" href="#">Инстаграм</a>
+            </li>
+          </ul>
+        </div>
+        <div class="promo">
+          <p>Давайте дружить, это выгодно!</p>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </section>>
     </footer>
     <section class="modal">
       <h2>Напишите нам</h2>
       <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
-         <p>
+        <p>
           <label for="user-name">Ваше имя:</label>
           <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
-         </p>
-         <p>
+        </p>
+        <p>
           <label for="email">Ваш e-mail:</label>
           <input id="email" type="text" name="email" placeholder="email@example.com">
-         </p>
-         <p>
-          <label for="letter-text">Текст письма:</label>
-          <input id="letter-text" type="text" name="text" placeholder="В свободной форме">
-         </p>
+        </p>
+        <p>
+          <label for="write-us-text">Текст письма:</label>
+          <textarea id="write-us-text" name="text" value="" placeholder="В свободной форме"></textarea>
+        </p>
         <button class="button" type="submit">Отправить</button>
       </form>
-      <button class="modal-close">Закрыть</button>
+      <button type="button" class="modal-close">Закрыть</button>
     </section>
   </body>
 </html>
