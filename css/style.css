@@ -15,13 +15,24 @@ a {
   text-decoration: none;
 }
 
-.main-header-logo:hover {
+
+
+
+/* Логотип */
+
+.main-header-logo:hover,
+.main-header-logo:focus {
   opacity: 0.8;
 }
 
 .main-header-logo:active {
   opacity: 0.2;
 }
+
+
+
+
+/* Навигация */
 
 .main-navigation {
   font-size: 16px;
@@ -42,7 +53,9 @@ a {
 }
 
 .site-navigation a:hover,
-.user-navigation a:hover {
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
   color: #f87f81;
 }
 
@@ -50,6 +63,39 @@ a {
 .user-navigation a:active {
   color: #a6a6a6;
 }
+
+
+
+/* Главная страница */
+
+
+/* Слайдер */
+
+.slider-item a {
+  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #ff6666;
+}
+
+.slider-item a:hover,
+.slider-item a:focus {
+  background-color: #ff3333;
+}
+
+.slider-item a:active {
+  color: #cc6666;
+  background-color: #cc3333;
+}
+
+
+
+
+/* Услуги */
 
 .services-list {
   list-style: none;
@@ -64,6 +110,80 @@ a {
   line-height: 30px;
   font-weight: 700;
 }
+
+.button-red {
+  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #ff6666;
+}
+
+.button-red:hover,
+.button-red:focus {
+  background-color: #ff3333;
+}
+
+
+.button-red:active {
+  color: #cc6666;
+  background-color: #cc3333;
+}
+
+.button-green {
+  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #00cc66;
+}
+
+.button-green:hover,
+.button-green:focus {
+  background-color: rgb(0, 188, 108);
+}
+
+
+.button-green:active {
+  color: #66cc99;
+  background-color: #009966;
+}
+
+.button-yellow {
+  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #ffcc33;
+}
+
+.button-yellow:hover,
+.button-yelliw:focus {
+  background-color: rgb(234, 181, 52);
+}
+
+
+.button-yellow:active {
+  color: #ffcc66;
+  background-color: #cc9933;
+}
+
+
+
+
+/* О нас */
 
 .about-us {
   color: #283136;
@@ -99,107 +219,33 @@ a {
   vertical-align: super;
 }
 
+
+
+
+/* Наши клиенты*/
+
 .clients-list {
   list-style: none;
-}
-
-.slider-item a {
-  font: inherit;
-  font-size: 16px;
-  line-height: 18px;
-  text-align: center;
-  vertical-align: middle;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: #ff6666;
-}
-
-.slider-item a:hover {
-  background-color: #ff3333;
-}
-
-.slider-item a:active {
-  color: #cc6666;
-  background-color: #cc3333;
-}
-
-.button-red {
-  font: inherit;
-  font-size: 16px;
-  line-height: 18px;
-  text-align: center;
-  color: #ffffff;
-  vertical-align: middle;
-  text-transform: uppercase;
-
-  background-color: #ff6666;
-}
-
-.button-red:hover {
-  background-color: #ff3333;
-}
-
-
-.button-red:active {
-  color: #cc6666;
-  background-color: #cc3333;
-}
-
-.button-green {
-  font: inherit;
-  font-size: 16px;
-  line-height: 18px;
-  text-align: center;
-  color: #ffffff;
-  vertical-align: middle;
-  text-transform: uppercase;
-
-  background-color: #00cc66;
-}
-
-.button-green:hover {
-  background-color: rgb(0, 188, 108);
-}
-
-
-.button-green:active {
-  color: #66cc99;
-  background-color: #009966;
-}
-
-.button-yellow {
-  font: inherit;
-  font-size: 16px;
-  line-height: 18px;
-  text-align: center;
-  color: #ffffff;
-  vertical-align: middle;
-  text-transform: uppercase;
-
-  background-color: #ffcc33;
-}
-
-.button-yellow:hover {
-  background-color: rgb(234, 181, 52);
-}
-
-
-.button-yellow:active {
-  color: #ffcc66;
-  background-color: #cc9933;
 }
 
 .clients-item {
   opacity: 0.2;
 }
 
-.clients-item:hover {
+.clients-item:hover,
+.clients-item:focus {
   opacity: 1.0;
 }
 
 .clients-item:active {
   opacity: 0.1;
 }
+/* Контакты  */
+.contacts {
+	color: #666666;
+}
+
+/* Социальные сети */
 
 .social {
   list-style: none;
@@ -209,8 +255,50 @@ a {
   background-color: #cccccc;
 }
 
-.button {
-	font: inherit;
+/* Попап */
+
+.modal h2 {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.write-us label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.write-us input,
+.write-us textarea {
+  font: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  border: 2px solid #d7dcde;
+  border-radius: 2px;
+}
+
+.write-us input:hover,
+.write-us textarea:hover {
+  border: 2px solid #b4b9bb;
+}
+
+.write-us input:focus,
+.write-us textarea:focus {
+  border: 2px solid #000000;
+  outline: 0;
+}
+
+.write-us input:invalid,
+.write-us textarea:invalid {
+  border-color: #e74246;
+}
+
+.modal-button {
+  font: inherit;
   font-size: 16px;
   line-height: 18px;
   text-align: center;
@@ -222,27 +310,121 @@ a {
   border: none;
 }
 
-.button:hover {
+.modal-button:hover,
+.modal-button:focus {
   background-color: #ff3333;
 }
 
 
-.button:active {
+.modal-button:active {
   color: #cc6666;
   background-color: #cc3333;
 }
 
+/* Каталог */
 
-.filter-form fieldset {
+/* фильтры */
+
+.price {
+  list-style: none;
   border: none;
 }
 
-.filter-form legend {
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 700;
+.grid {
+  border: none;
 }
 
-.filter ul {
+
+.filter-option {
   list-style: none;
 }
+
+.features {
+  border: none;
+}
+
+.sorting {
+  border: none;
+}
+
+.options,
+.more-less {
+  list-style: none;
+}
+
+.options a,
+.more-less a {
+  color: #283136;
+}
+
+/* Товары */
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-list a {
+  color: #283136;
+}
+/* с ценой что-то пошло не так, она растянулась на всю страницу
+.catalog-item-price {
+  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: bottom;
+  text-transform: uppercase;
+
+  background-color: #ff6666;
+}
+
+.catalog-item-price p:hover,
+.catalog-item-price p:focus {
+  background-color: #ff3333;
+}
+
+
+.catalog-item-price p:active {
+  color: #cc6666;
+  background-color: #cc3333;
+}
+*/
+
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-list a {
+  color: #283136;
+}
+
+.pagination-item a {
+  font-size: 16px;
+  line-height: 18px;
+  vertical-align: bottom;
+  text-align: center;
+  background-color: #eeeeee;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+  background-color: #dfdfdf;
+}
+
+
+.pagination-item a:active {
+  color: #a9a9a9;
+  background-color: #d5d5d5;
+}
+
+.pagination-item-current a {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+
+
+
+
