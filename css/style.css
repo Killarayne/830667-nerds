@@ -19,6 +19,7 @@ a {
 
 
 
+
 /* Логотип */
 
 .main-header-logo:hover,
@@ -29,6 +30,7 @@ a {
 .main-header-logo:active {
   opacity: 0.2;
 }
+
 
 
 
@@ -70,6 +72,7 @@ a {
 
 
 
+
 /* Главная страница */
 
 
@@ -99,6 +102,7 @@ a {
   color: #cc6666;
   background-color: #cc3333;
 }
+
 
 
 
@@ -193,6 +197,7 @@ a {
 
 
 
+
 /* О нас */
 
 .about-us {
@@ -233,6 +238,7 @@ a {
 
 
 
+
 /* Наши клиенты*/
 
 .clients-list {
@@ -253,11 +259,13 @@ a {
 }
 
 
+
 /* Контакты  */
 
 .contacts {
   color: #666666;
 }
+
 
 
 /* Социальные сети */
@@ -269,6 +277,7 @@ a {
 .social-button {
   background-color: #cccccc;
 }
+
 
 
 /* Попап */
@@ -338,6 +347,7 @@ a {
 }
 
 
+
 /* Каталог */
 
 
@@ -376,6 +386,7 @@ a {
 }
 
 
+
 /* Товары */
 
 .catalog-list {
@@ -385,6 +396,7 @@ a {
 .catalog-list a {
   color: #283136;
 }
+
 
 
 /* с ценой что-то пошло не так, она растянулась на всю страницу
@@ -445,45 +457,97 @@ a {
 }
 
 
+
 /* Сеточные стили */
+
+.vissually-hidden {
+  display: none;
+}
+
 /* Главная */
 
+html,
 body {
-    width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
+  min-width: 1440px;
+  min-height: 2470px;
 }
+
+.container {
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+  width: 1200px;
+}
+
+
+
+
 
 }
 
 .main-header {
   margin-bottom: 0px;
+  background-color: #000000;
 }
 
 .main-navigation {
-  min-height: 80px;
   display: flex;
-  align-items: center;
   justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  padding-bottom: 35px;
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-top: 52px;
+  padding-left: 140px;
+  padding-right: 140px;
+
 }
+
 
 .site-navigation {
   display: flex;
-  width: 440px;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 440px
 }
 
 .user-navigation {
   display: flex;
+  justify-content: flex-end;
   width: 160px;
+}
+
+.slider-list {
+  list-style: none;
+      margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.slider {
+  margin-bottom: 80px;
+}
+.slider-item h2{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.services{
+  display: flex;
+  margin-bottom: 80px;
 }
 
 .services-list {
   display: flex;
-  margin: 0;
-  padding: 0;
-  justify-content: space-around;
-  margin-bottom: 80px;
+  justify-content: space-between;
+  margin-right: 60px;
+  width: 1100px;
 }
 
 .services-item {
@@ -495,9 +559,10 @@ body {
   padding: 0;
   width: 1160px;
   display: flex;
-  margin-bottom: : 80px;
+  margin-bottom:: 80px;
   justify-content: space-between;
   border-top: 1px solid #eeeeee;
+  margin-bottom: 80px;
 }
 
 .column-left {
@@ -512,7 +577,7 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
-  justify-content: center;
+  justify-content: space-around;
   margin-bottom: 80px;
 }
 
@@ -522,9 +587,34 @@ body {
 
 .social {
   display: flex;
+  justify-content: space-around;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 15px;
+  padding-left: 10px;
+  padding-right: 20px;
+  padding-bottom: 70px;
+  width: 1160px;
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 0;
   padding: 0;
-  justify-content: space-around;
+  width: 260px;
+  list-style: none;
+}
+
+.social-item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #e1e1e1;
 }
 
 .page-title {
@@ -535,13 +625,47 @@ body {
   padding: 0;
   justify-content: center;
   background-color: #eeeeee;
-  min-height: 
+  min-height:
+}
 
+.contacts {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 20px;
+  margin-left: 120px;
+  
+}
+
+.studio-name {
+  font-weight: bold;
+  text-transform: uppercase;
+
+}
+
+
+
+/* Inner page */
+
+.catalog-container {
+ display: flex;
+ justify-content: space-between;
+  margin: 0 auto;
+  margin-top: -50px;
+  padding: 0;
+  width: 1200px;
 }
 
 .filters {
-  width: 260px;
-  display: flex;
-  flex-direction: column;
+  flex-direction: flex-start;
 }
 
+.sorting {
+list-style: none;
+flex-direction: flex-start;
+}
+
+.catalog-list{
+  display: flex;
+flex-direction: flex-end;
+}

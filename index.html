@@ -36,27 +36,29 @@
       </ul>
     </nav>
   </header>
-  <main role="main">
-    <section class="slider">
-      <section class="slider-item">
+  <section class="slider">
+    <ul class="slider-list">
+      <li class="slider-item">
         <h2>Долго, дорого, скрупулезно.</h2>
         <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
         <a href="">Узнать больше</a>
         <img src="img/slide1.png" width="698" height="413" alt="#">
-      </section><!--
-      <section class="slider-item">
+      </li>
+      <li class="slider-item">
         <h2>Любим математику как никто другой</h2>
         <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
         <a href="">Узнать больше</a>
         <img src="img/slide2.png" width="663" height="430" alt="#">
-      </section>
-      <section class="slider-item">
+      </li>
+      <li class="slider-item">
         <h2>Только ночь, только хардкор</h2>
         <p>Работаем днем, как все? Мы против этого. Ближе к полуночи работа только начинается</p>
         <a href="">Узнать больше</a>
         <img src="img/slide3.png" width="759" height="411" alt="#">
-      </section>-->
-    </section>
+      </li>
+    </ul>
+  </section>
+  <main class="container">
     <section class="services">
       <h2 class="vissually-hidden">Услуги</h2>
       <ul class="services-list">
@@ -64,30 +66,28 @@
           <img src="img/illustration-1.png" width="300" height="146" alt="Веб-сайты">
           <h3 class="services-title">Веб-сайты</h3>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <a class="button-red" href="#">Заказать</a>
+          <a class="button button-red" href="#">Заказать</a>
         </li>
         <li class="services-item">
           <img src="img/illustration-2.png" width="300" height="146" alt="приложения">
           <h3 class="services-title">Приложеня</h3>
           <p>Покорите топ-10 приложений в AppStore и Google play</p>
-          <a class="button-green" href="#">Заказать</a>
+          <a class="button button-green" href="#">Заказать</a>
         </li>
         <li class="services-item">
           <img src="img/illustration-3.png" width="300" height="146" alt="презентации">
           <h3 class="services-title">Презентации</h3>
           <p>Вы даже не представляете на сколько вы изумительны!</p>
-          <a class="button-yellow" href="#">Заказать</a>
+          <a class="button button-yellow" href="#">Заказать</a>
         </li>
       </ul>
     </section>
     <section class="about-us">
       <h2 class="vissually-hidden">О нас</h2>
       <div class="column-left">
-        <h3 class="column-column-left">Мы маленькая, но гордая дизайн-студия из Краснодара.</h3>
-        <!--Все таки мне кажется это мини заголовок как и "Выполняем заказы на разработку"-->
+        <b class="column-column-left">Мы маленькая, но гордая дизайн-студия из Краснодара.</b>
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Рабботаем не покладая рук, как роботы.</p>
-        <h3 class="worktype-list">Выполняем заказы на разработку:</h3>
-        <!--Либо два абзаца но чисто визуально же вроде похоже на мини заголовки)-->
+        <p class="worktype-list">Выполняем заказы на разработку:</p>
         <ul class="worktype-list-items">
           <li>Веб-сайтов любой сложности</li>
           <li>Мобильных приложения для IOS и Android</li>
@@ -104,9 +104,9 @@
             <td class="field">Минимальная предоплата</td>
           </tr>
           <tr>
-            <td class="value">146<span class="percent">%</span></td>
-            <td class="value">100<span class="percent">%</span></td>
-            <td class="value">50<span class="percent">%</span></td>
+            <td class="value">146<sup>%<sup></td>
+            <td class="value">100<sup>%<sup></td>
+            <td class="value">50<sup>%<sup></td>
           </tr>
         </table>
       </div>
@@ -140,36 +140,34 @@
   <footer class="main-footer">
     <section class="location">
       <div class="contacts">
-        Nёrds design studio
+       <p class="studio-name"> Nёrds design studio
         <p>191186, Санкт-Петербург,
           <br> ул. Б. Конюшенная, д. 19/8
           <br> Тел: +7(812)275-75-75</p>
-        <a href="#" class="button-red">Напишите нам</a>
+        <a href="#" class="button button-red">Напишите нам</a>
       </div>
       <div class="map">
         <img src="img/map.jpg" width="1440" height="416" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8. Тел: +7(812)275-75-75">
       </div>
     </section>
     <section class="social">
-      <div class="social">
-        <ul class="social">
-          <li>
-            <a class="social-button" href="#">
+      <ul class="social-list">
+        <li class="social-item">
+          <a class="social-button" href="#">
                 <img src="img/vk-icon.svg" width="21" height="21" alt="Мы Вконтакте">
               </a>
-          </li>
-          <li>
-            <a class="social-button" href="#">
+        </li>
+        <li class="social-item">
+          <a class="social-button" href="#">
                 <img src="img/fb-icon.svg" width="21" height="21" alt="Мы в Фейсбуке">
               </a>
-          </li>
-          <li>
-            <a class="social-button" href="#">
+        </li>
+        <li class="social-item">
+          <a class="social-button" href="#">
                 <img src="img/insta-icon.svg" width="21" height="21" alt="Мы в Инстаграмме">
               </a>
-          </li>
-        </ul>
-      </div>
+        </li>
+      </ul>
       <div class="promo">
         <p>Давайте дружить, это выгодно!</p>
         <p>Скидка 10% для друзей из социальных сетей.</p>
@@ -178,25 +176,25 @@
   </footer>
   <section class="modal">
     <div class="container">
-    <h2>Напишите нам</h2>
-    <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
-      <p>
-        <label for="user-name">Ваше имя:</label>
-        <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
-      </p>
-      <p>
-        <label for="email">Ваш e-mail:</label>
-        <input id="email" type="text" name="email" placeholder="email@example.com">
-      </p>
-      <p>
-        <label for="write-us-text">Текст письма:</label>
-        <textarea id="write-us-text" name="text" placeholder="В свободной форме"></textarea>
-      </p>
-      <button class="button modal-button" type="submit">Отправить</button>
-    </form>
-    <button type="button" class="modal-close">Закрыть</button>
+      <h2>Напишите нам</h2>
+      <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="user-name">Ваше имя:</label>
+          <input id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="email">Ваш e-mail:</label>
+          <input id="email" type="text" name="email" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="write-us-text">Текст письма:</label>
+          <textarea id="write-us-text" name="text" placeholder="В свободной форме"></textarea>
+        </p>
+        <button class="button modal-button" type="submit">Отправить</button>
+      </form>
+      <button type="button" class="modal-close">Закрыть</button>
   </section>
-</div>
+  </div>
 </body>
 
 </html>

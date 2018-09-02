@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
@@ -7,6 +8,7 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
   <header class="main-header">
     <nav class="main-navigation">
@@ -34,9 +36,8 @@
       </ul>
     </nav>
   </header>
-  <main role="inner">
+  <main class="catalog-container">
     <h1 class="page-title">Магазин готовых шаблонов</h1>
-    <div class="catalog-columns">
     <section class="filters">
       <h2 class="vissually-hidden">Фильтр товаров</h2>
       <form action="http://echo.htmlacademy.ru" class="filter-form" method="post">
@@ -92,92 +93,82 @@
         </fieldset>
         <button class="button-submit" type="submit">Показать</button>
       </form>
-      <fieldset class="sorting">
-        <legend>Сортировать</legend>
-        <ul class="options">
-          <li>
-            <a href="#">По цене</a>
-          </li>
-          <li>
-            <a href="#">По типу</a>
-          </li>
-          <li>
-            <a href="#">По названию</a>
-          </li>
-        </ul>
-        <ul class="more-less">
-          <li>
-            <a href="#">Больше</a>
-          </li>
-          <li>
-            <a href="#">Меньше</a>
-          </li>
-        </ul>
-      </fieldset>
-      <!--Не уверен что правильно понял, как сделать сортировку-->
-    </section>
-    <section class="catalog">
-      <h2 class="vissually-hidden">Список готовых шаблонов</h2>
+      <section class="catalog">
+        <h2 class="vissually-hidden">Список готовых шаблонов</h2>
+        <div class="sorting">
+          <span>Сортировать</span>
+          <ul class="list-sorting">
+            <li class="sort">
+              <a class="current" href="#">По цене</a>
+            </li>
+            <li class="sort">
+              <a href="#">По типу</a>
+            </li>
+            <li class="sort">
+              <a href="#">По названию</a>
+            </li>
+            <li class="sort">
+              <div class="icon-down">
+                <a href="#">По убывающей</a>
+              </div>
+            </li>
+            <li class="sort">
+              <div class="icon-up">
+                <a href="#">По возрастающей</a>
+              </div>
+            </li>
+          </ul>
+      </section>
       <ul class="catalog-list">
         <li class="catalog-item">
-          <article class="sedona">
-            <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
-            <div>
-              <h3>
+          <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
+          <div>
+            <h3>
                 <a href="catalog-item.html">Sedona</a>
                 </h3>
-              <p class="catalog-item-title">Информационный сайт для туристов</p>
-              <p class="catalog-item-price">9 900</p>
-            </div>
-          </article>
+            <p class="catalog-item-title">Информационный сайт для туристов</p>
+            <a class="button catalog-button" href="#">9 900 руб.</a>
+          </div>
         </li>
         <li class="catalog-item">
-          <article>
-            <img src="img/img-pink.jpg" width="360" height="576" alt="Pink">
-            <div>
-              <h3>
+          <img src="img/img-pink.jpg" width="360" height="576" alt="Pink">
+          <div>
+            <h3>
                 <a href="catalog-item.html">Pink app</a>
                 </h3>
-              <p class="catalog-item-title">Продуктовый лендинг приложение для IOS и Android</p>
-              <p class="catalog-item-price">9 900</p>
-            </div>
-          </article>
+            <p class="catalog-item-title">Продуктовый лендинг приложение для IOS и Android</p>
+            <a class="button catalog-button" href="#">9 900 руб.</a>
+          </div>
         </li>
         <li class="catalog-item">
-          <article>
-            <img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
-            <div>
-              <h3>
+          <img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
+          <div>
+            <h3>
                 <a href="catalog-item.html">Barbershop</a>
                 </h3>
-              <p class="catalog-item-title">Сайт салона красоты. Для мужчин, да.</p>
-              <p class="catalog-item-price">9 900</p>
-            </div>
-          </article>
+            <p class="catalog-item-title">Сайт салона красоты. Для мужчин, да.</p>
+            <a class="button catalog-button" href="#">9 900 руб.</a>
+          </div>
         </li>
         <li class="catalog-item">
-          <article>
-            <img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka">
-            <div>
-              <h3>
+          <img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka">
+          <div>
+            <h3>
                 <a href="catalog-item.html">Mishka</a>
                 </h3>
-              <p class="catalog-item-title">Интернет-магазин вязаных игрушек</p>
-              <p class="catalog-item-price">9 900</p>
-            </div>
-          </article>
+            <p class="catalog-item-title">Интернет-магазин вязаных игрушек</p>
+            <a class="button catalog-button" href="#">9 900 руб.</a>
+          </div>
         </li>
         <li class="catalog-item">
-          <article>
-            <img src="img/img-aplus.jpg" width="360" height="576" alt="A Plus">
-            <div>
-              <h3>
+          <img src="img/img-aplus.jpg" width="360" height="576" alt="A Plus">
+          <div>
+            <h3>
                 <a href="catalog-item.html">A Plus</a>
                 </h3>
-              <p class="catalog-item-title">Лендинг курсов повышения квалификации</p>
-              <p class="catalog-item-price">9 900</p>
-            </div>
-          </article>
+            <p class="catalog-item-title">Лендинг курсов повышения квалификации</p>
+            <a class="button catalog-button" href="#">9 900 руб.</a>
+          </div>
         </li>
         <li class="catalog-item">
           <article>
@@ -187,12 +178,10 @@
                 <a href="catalog-item.html">Кваст</a>
                 </h3>
               <p class="catalog-item-title">Промо-сайт производителя крафтового кваса</p>
-              <p class="catalog-item-price">9 900</p>
+              <a class="button catalog-button" href="#">9 900 руб.</a>
             </div>
-          </article>
         </li>
       </ul>
-    </div>
       <ul class="pagination-list">
         <li class="pagination-item pagination-item-current">
           <a href="#">1</a>
@@ -216,32 +205,30 @@
         <p>191186, Санкт-Петербург,
           <br> ул. Б. Конюшенная, д. 19/8
           <br> Тел: +7(812)275-75-75</p>
-        <a href="#" class="button-red">Напишите нам</a>
+        <a href="#" class="button button-red">Напишите нам</a>
       </div>
       <div class="map">
         <img src="img/map.jpg" width="1440" height="416" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8. Тел: +7(812)275-75-75">
       </div>
     </section>
     <section class="social">
-      <div class="social">
-        <ul class="social">
-          <li>
-            <a class="social-button" href="#">
+      <ul class="social-list">
+        <li class="social-item">
+          <a class="social-button" href="#">
                 <img src="img/vk-icon.svg" width="21" height="21" alt="Мы Вконтакте">
               </a>
-          </li>
-          <li>
-            <a class="social-button" href="#">
+        </li>
+        <li class="social-item">
+          <a class="social-button" href="#">
                 <img src="img/fb-icon.svg" width="21" height="21" alt="Мы в Фейсбуке">
               </a>
-          </li>
-          <li>
-            <a class="social-button" href="#">
+        </li>
+        <li class="social-item">
+          <a class="social-button" href="#">
                 <img src="img/insta-icon.svg" width="21" height="21" alt="Мы в Инстаграмме">
               </a>
-          </li>
-        </ul>
-      </div>
+        </li>
+      </ul>
       <div class="promo">
         <p>Давайте дружить, это выгодно!</p>
         <p>Скидка 10% для друзей из социальных сетей.</p>
