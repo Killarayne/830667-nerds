@@ -67,6 +67,7 @@ a {
 .site-navigation a:active,
 .user-navigation a:active {
   color: #a6a6a6;
+  border-bottom: 1px solid red;
 }
 
 
@@ -399,7 +400,7 @@ a {
 
 
 
-/* с ценой что-то пошло не так, она растянулась на всю страницу
+ с ценой что-то пошло не так, она растянулась на всю страницу
 .catalog-item-price {
   font: inherit;
   font-size: 16px;
@@ -413,16 +414,16 @@ a {
 }
 
 .catalog-item-price p:hover,
-.catalog-item-price p:focus {
+.catalog-item-price :focus {
   background-color: #ff3333;
 }
 
 
-.catalog-item-price p:active {
+.catalog-item-price a:active {
   color: #cc6666;
   background-color: #cc3333;
 }
-*/
+
 
 .pagination-list {
   list-style: none;
@@ -497,11 +498,10 @@ body {
   align-items: center;
   margin: 0 auto;
   padding-bottom: 35px;
-  margin-right: 0px;
-  margin-left: 0px;
   padding-top: 52px;
   padding-left: 140px;
   padding-right: 140px;
+  width: 1200px;
 
 }
 
@@ -628,12 +628,23 @@ body {
   min-height:
 }
 
+.location {
+  position: relative;
+  background-image: url(../img/map.jpg);
+  min-height: 416px;
+  padding-top: 54px;
+  box-sizing: border-box;
+}
+
 .contacts {
+  background-color: #ffffff;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  padding-left: 20px;
-  margin-left: 120px;
+  padding: 50px;
+  width: 319px;
+  box-sizing: border-box;
+  /* learn box sizing */
   
 }
 
@@ -645,15 +656,17 @@ body {
 
 
 
+
+
 /* Inner page */
 
 .catalog-container {
  display: flex;
  justify-content: space-between;
   margin: 0 auto;
-  margin-top: -50px;
-  padding: 0;
+  padding: 0 20px;
   width: 1200px;
+  box-sizing: border-box;
 }
 
 .filters {
@@ -661,11 +674,40 @@ body {
 }
 
 .sorting {
-list-style: none;
-flex-direction: flex-start;
+display: flex;
+justify-content: space-between;
+
+}
+
+.sorting a{
+ color: #283136;  
+}
+
+.list-sorting {
+  display: flex;
+  list-style: none;
 }
 
 .catalog-list{
-  display: flex;
-flex-direction: flex-end;
+ display: flex;
+flex-wrap: wrap;
 }
+
+.catalog-item {
+  margin-right: 40px;
+  width: 360px;
+}
+
+.catalog-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.pagination-list {
+  display: flex;
+}
+
+.pagination-item {
+  margin-right: 10px;
+}
+
+
