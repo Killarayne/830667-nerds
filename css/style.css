@@ -406,7 +406,69 @@ input[type="radio"].visually-hidden {
   color: #283136;
 }
 
-с ценой что-то пошло не так,
+.catalog-list .catalog-item::before {
+  content: "";
+  display: block;
+  padding-left: 13px;
+  height: 40px;
+  font-size: 22px;
+  text-align: left;
+  line-height: 42px;
+  color: #ffffff;
+  background-image: url("../img/browser.svg");
+  border-radius: 5px 5px 0 0;
+  opacity: 0.2;
+}
+
+.catalog-list .catalog-item:hover::before {
+  opacity: 1;
+}
+
+.catalog-item:hover .catalog-item-price {
+  display: block;
+}
+
+.catalog-list h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.catalog-list p {
+  color: #000000;
+}
+
+.catalog-item-price {
+  position: absolute;
+  display: none;
+  top: 385px;
+  left: 0;
+  height: 222px;
+  width: 360px;
+  padding-top: 9px;
+  text-align: center;
+  background-color: #eeeeee;
+}
+
+.catalog-item-price p {
+  margin: -5px auto;
+  width: 180px;
+  margin-bottom: 30px;
+  line-height: 19px;
+  font-weight: 400;
+  color: #666666;
+}
+
+.catalog-item-price .button {
+  margin: 0 auto;
+  padding: 16px 0;
+  width: 200px;
+}
+
+
+/*с ценой что-то пошло не так,
 она растянулась на всю страницу .catalog-item-price {
   font: inherit;
   font-size: 16px;
@@ -417,7 +479,7 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 
   background-color: #ff6666;
-}
+}*/
 
 .catalog-item-price p:hover,
 .catalog-item-price :focus {
@@ -849,6 +911,103 @@ body {
 
 .filters {
   flex-direction: flex-start;
+}
+
+.filter-item {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.range-filter {
+  width: 260px;
+  margin-top: 49px;
+}
+
+.filter-item legend {
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+ position: absolute;
+  top: 31px;
+  left: 0;
+
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 50%;
+
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.price-controls input {
+  width: 60px;
+  padding: 8px 10px;
+  margin-left: 10px;
+
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #283136;
+
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.max-price {
+  text-align: right;
 }
 
 .sorting {
