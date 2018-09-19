@@ -390,6 +390,7 @@ input[type="radio"].visually-hidden {
 .list-sorting li {
   margin-right: 30px;
   opacity: 0.3;
+  text-transform: uppercase;
 }
 
 .list-sorting li:hover,
@@ -405,6 +406,10 @@ input[type="radio"].visually-hidden {
 
 .catalog-list {
   list-style: none;
+  margin-left: 140px;
+  margin-top: 40px;
+  padding: 0px;
+  margin-bottom: 37px;
 }
 
 .catalog-list h3 a {
@@ -473,6 +478,7 @@ input[type="radio"].visually-hidden {
 
 .pagination-list {
   list-style: none;
+  margin-bottom: 75px;
 }
 
 .pagination-list a {
@@ -1121,6 +1127,7 @@ text-align: left;
 
 .catalog-item {
   margin-right: 40px;
+  margin-bottom: 27px;
   width: 360px;
 }
 
@@ -1380,4 +1387,21 @@ padding: 10px 0;
   color: rgba(0, 0, 0, 0.3);
   background-color: #d5d5d5;
   outline: none;
+}
+
+.price legend {
+  font-size: 19px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 17px;
+
+}
+
+.sorting span {
+  font-size: 19px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+
 }
