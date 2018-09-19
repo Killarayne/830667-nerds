@@ -41,7 +41,7 @@
     <section class="filters">
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <form action="http://echo.htmlacademy.ru" class="filter-form" method="get">
-        <fieldset class="filter-item">
+        <fieldset class="price">
           <legend>Стоимость:</legend>
           <div class="range-filter">
             <div class="range-controls">
@@ -52,8 +52,12 @@
               <div class="toggle toggle-max"></div>
             </div>
             <div class="price-controls">
-              <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-            <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+              <label class="min-price">от
+                <input name="min-price" type="text" value="0">
+              </label>
+              <label class="max-price">до
+                <input name="max-price" type="text" value="15000">
+              </label>
             </div>
           </div>
           <fieldset class="grid">
@@ -75,24 +79,24 @@
           </fieldset>
           <fieldset class="features">
             <legend>Особенности:</legend>
-            <ul>
-              <li class="filter-option">
+            <ul class="filter-option">
+              <li class="filter-item">
                 <input class="filter-checkbox" type="checkbox" id="filter-slider" name="slider" checked>
                 <label for="filter-slider">Слайдер</label>
               </li>
-              <li class="filter-option">
+              <li class="filter-item">
                 <input class="filter-checkbox" type="checkbox" id="filter-features" name="features">
                 <label for="filter-features">Блок преимуществ</label>
               </li>
-              <li class="filter-option">
+              <li class="filter-item">
                 <input class="filter-checkbox" type="checkbox" id="filter-news" name="news" checked>
                 <label for="filter-news">Новости</label>
               </li>
-              <li class="filter-option">
+              <li class="filter-item">
                 <input class="filter-checkbox" type="checkbox" id="filter-gallery" name="gallery">
                 <label for="filter-gallery">Галерея</label>
               </li>
-              <li class="filter-option">
+              <li class="filter-item">
                 <input class="filter-checkbox" type="checkbox" id="filter-cart" name="cart">
                 <label for="filter-cart">Корзина</label>
               </li>
@@ -131,63 +135,62 @@
         <li class="catalog-item">
           <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
           <div class="catalog-item-info">
-            <!-- переделать -->
             <h3>
                 <a href="catalog-item.html">Sedona</a>
                 </h3>
             <p class="catalog-item-title">Информационный сайт для туристов</p>
-            <a class="catalog-item-price button" href="#">9 900 руб.</a>
+            <a class="catalog-item-price button-red" href="#">9 900 руб.</a>
           </div>
         </li>
         <li class="catalog-item">
           <img src="img/img-pink.jpg" width="360" height="576" alt="Pink">
-          <div>
+          <div class="catalog-item-info">
             <h3>
                 <a href="catalog-item.html">Pink app</a>
                 </h3>
             <p class="catalog-item-title">Продуктовый лендинг приложение для IOS и Android</p>
-            <a class="catalog-item-price button" href="#">9 900 руб.</a>
+            <a class="catalog-item-price button-red" href="#">9 900 руб.</a>
           </div>
         </li>
         <li class="catalog-item">
           <img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
-          <div>
+          <div class="catalog-item-info">
             <h3>
                 <a href="catalog-item.html">Barbershop</a>
                 </h3>
             <p class="catalog-item-title">Сайт салона красоты. Для мужчин, да.</p>
-            <a class="catalog-item-price button" href="#">9 900 руб.</a>
+            <a class="catalog-item-price button-red" href="#">9 900 руб.</a>
           </div>
         </li>
         <li class="catalog-item">
           <img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka">
-          <div>
+          <div class="catalog-item-info">
             <h3>
                 <a href="catalog-item.html">Mishka</a>
                 </h3>
             <p class="catalog-item-title">Интернет-магазин вязаных игрушек</p>
-            <a class="catalog-item-price button" href="#">9 900 руб.</a>
+            <a class="catalog-item-price button-red" href="#">9 900 руб.</a>
           </div>
         </li>
         <li class="catalog-item">
           <img src="img/img-aplus.jpg" width="360" height="576" alt="A Plus">
-          <div>
+          <div class="catalog-item-info">
             <h3>
                 <a href="catalog-item.html">A Plus</a>
                 </h3>
             <p class="catalog-item-title">Лендинг курсов повышения квалификации</p>
-            <a class="catalog-item-price button" href="#">9 900 руб.</a>
+            <a class="catalog-item-price button-red" href="#">9 900 руб.</a>
           </div>
         </li>
         <li class="catalog-item">
           <article>
             <img src="img/img-kvast.jpg" width="360" height="576" alt="Кваст">
-            <div>
+            <div class="catalog-item-info">
               <h3>
                 <a href="catalog-item.html">Кваст</a>
                 </h3>
               <p class="catalog-item-title">Промо-сайт производителя крафтового кваса</p>
-              <a class="catalog-item-price button" href="#">9 900 руб.</a>
+              <a class="catalog-item-price button-red" href="#">9 900 руб.</a>
             </div>
         </li>
       </ul>
