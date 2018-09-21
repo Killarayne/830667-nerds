@@ -140,7 +140,7 @@ input[type="radio"].visually-hidden {
 
 .button {
   display: inline-block;
-  padding: 16px 44px;
+  padding: 16px 40px;
   font: inherit;
   font-size: 16px;
   line-height: 18px;
@@ -153,6 +153,34 @@ input[type="radio"].visually-hidden {
 .button-red {
   color: #ffffff;
   background-color: #ff6666;
+  text-transform: uppercase;
+}
+
+.button-red-1{
+  display: inline-block;
+  padding: 16px 44px;
+  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  border-radius: 2px;
+  color: #ffffff;
+  background-color: #ff6666;
+  text-transform: uppercase;
+}
+
+.button-red-1:hover,
+.button-red-1:focus {
+  background-color: #ff3333;
+}
+
+
+.button-red-1:active {
+  color: #cc6666;
+  /* opacity */
+  background-color: #cc3333;
 }
 
 .button-red:hover,
@@ -198,6 +226,8 @@ input[type="radio"].visually-hidden {
   color: #e9b341;
   background-color: #e5a722;
 }
+
+
 
 /* О нас */
 
@@ -253,6 +283,7 @@ input[type="radio"].visually-hidden {
 
 .clients-list {
   list-style: none;
+  padding-left: 16px;
 }
 
 .clients-item {
@@ -827,13 +858,49 @@ body {
   border-bottom: 2px solid #eeeeee;
 }
 
+.clients-list li {
+  position: relative;
+
+}
+
+.clients-list li:nth-child(-n+3)::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  width: 2px;
+  height: 52px;
+  background-color: #eeeeee;
+
+}
+
+
 .clients-item {
   width: 260px;
 }
 
-.clients-item:nth-child(-n+3) {
-  border-right: 2px solid #eeeeee;
+
+
+
+.clients-list li:nth-child(2) {
+  position: relative;
+  top: -12px;
+  left: 12px;
+
+
 }
+.clients-list li:nth-child(3) {
+  position: relative;
+  top: 6px;
+  left: 35px;
+}
+
+.clients-list li:nth-child(4) {
+  position: relative;
+  top: -6px;
+  left: 55px;
+}
+
 
 .social {
   display: flex;
@@ -1250,6 +1317,7 @@ text-align: left;
 }
 
 .pagination-list {
+  list-style: none;
   display: flex;
 }
 
@@ -1259,7 +1327,7 @@ text-align: left;
 
 .pagination-list a {
   padding: 15px 21px;
-  list-style: none;
+  
   background-color: #eeeeee;
   color: #000000;
   text-transform: uppercase;
@@ -1271,6 +1339,7 @@ text-align: left;
   color: #000000;
   background-color: #ffffff;
   border: 2px solid #eeeeee;
+  padding: 13px 19px;
 }
 
 
