@@ -1310,7 +1310,7 @@ text-align: left;
 
 
 .catalog-item:hover {
-  box-shadow: 6px 6px 15px rgba(0, 1, 1, 0.25);
+  box-shadow: 0 0 15px 6px rgba(0, 1, 1, 0.25);
 }
 .catalog-item:nth-child(2n) {
   margin-right: 0;
