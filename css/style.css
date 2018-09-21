@@ -140,7 +140,7 @@ input[type="radio"].visually-hidden {
 
 .button {
   display: inline-block;
-  padding: 16px 40px;
+  padding: 16px 44px;
   font: inherit;
   font-size: 16px;
   line-height: 18px;
@@ -220,7 +220,7 @@ input[type="radio"].visually-hidden {
   margin-top: 12px;
   list-style: none;
   line-height: 3em;
-  padding-left: 36px;
+  padding: 0;
 }
 
 .worktype-list-items li {
@@ -377,9 +377,18 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
+.filter-option li {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
 .features {
   border: none;
 }
+
+
+
+
 
 .sorting {
   border: none;
@@ -388,7 +397,7 @@ input[type="radio"].visually-hidden {
 
 
 .list-sorting li {
-  margin-right: 30px;
+  margin-right: 27px;
   opacity: 0.3;
   text-transform: uppercase;
 }
@@ -400,6 +409,12 @@ input[type="radio"].visually-hidden {
 
 .list-sorting li:active {
   opacity: 1;
+}
+
+.sorting span {
+  margin-left: 139px;
+  margin-top: 14px;
+  letter-spacing: -0.7px;
 }
 
 /* Товары */
@@ -445,19 +460,28 @@ input[type="radio"].visually-hidden {
   display: none;
   position: absolute;
   left: 0px;
-  top: 400px;
+  top: 386px;
   width: 100%;
-  padding: 20px 0px;
+  padding: 20px 0px 62px;
   background-color: #eeeeee;
   text-align: center;
 }
 
 .catalog-list h3 {
+  margin-top: 5px;
+  margin-bottom: 0;
+  margin-right: 2px;
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
+}
+
+.catalog-item-title {
+  line-height: 1.2;
+  margin-top: 13px;
+  margin-bottom: 44px;
 }
 
 .catalog-list p {
@@ -469,7 +493,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-item-price {
   margin: 40px auto;
-  padding: 16px 40px;
+  padding: 16px 62px;
   width: 200px;
   border-radius: 3px;
 }
@@ -478,7 +502,8 @@ input[type="radio"].visually-hidden {
 
 .pagination-list {
   list-style: none;
-  margin-bottom: 75px;
+  margin-bottom: 76px;
+  margin-left: 96px;
 }
 
 .pagination-list a {
@@ -491,6 +516,13 @@ input[type="radio"].visually-hidden {
   vertical-align: bottom;
   text-align: center;
   background-color: #eeeeee;
+  border-radius: 3px;
+}
+
+.pagination-item a span:last-child {
+  vertical-align: middle;
+  padding-left: 57px;
+  padding-right: 57px;
 }
 
 .pagination-item a:hover,
@@ -758,6 +790,30 @@ body {
   width: 360px;
 }
 
+.value:nth-child(3) {
+ 
+}
+
+.value:nth-child(2) {
+  padding-left: 8px;
+  padding-right: 24px;
+}
+
+.field:nth-child(2) {
+  padding-left: 8px;
+}
+
+.table-title {
+  text-transform: uppercase;
+  padding-top: 28px;
+  padding-bottom: 48px;
+}
+
+.field {
+  padding-top: 26px;
+  line-height: 1.2;
+}
+
 
 .clients-list {
   display: flex;
@@ -781,14 +837,15 @@ body {
 
 .social {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 35px;
-  padding-left: 10px;
+  padding-top: 72px;
+  padding-left: 57px;
   padding-right: 20px;
   padding-bottom: 70px;
-  width: 1160px;
+  width: 1200px;
+  
 }
 
 .social-list {
@@ -830,6 +887,15 @@ body {
 
 /*Доделать при нажатии*/
 
+.promo {
+  margin-left: 140px;
+  line-height: 2.7;
+}
+
+.promo p{
+  margin: 0;
+}
+
 .promo p:first-child {
   font-size: 36px;
   line-height: 36px;
@@ -854,7 +920,7 @@ body {
   min-height: 416px;
   padding-top: 54px;
   box-sizing: border-box;
-  background-position-y: -100px;
+  background-position-y: -150px;
 }
 
 .contacts {
@@ -862,10 +928,17 @@ body {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  padding: 50px;
+  padding-top: 48px;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-bottom: 50px;
   width: 319px;
   box-sizing: border-box;
   /* learn box sizing */
+}
+
+.contacts span {
+  color: #666666;
 }
 
 .studio-name {
@@ -874,6 +947,14 @@ body {
   font-size: 18px;
   line-height: 30px;
   color: #000000;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.address {
+  line-height: 1.1;
+  margin-top: 24px;
+  margin-bottom: 41px;
 }
 
 .write-us {
@@ -938,7 +1019,10 @@ body {
 
 .filter-form fieldset {
 padding: 0px;
-margin: 0px;
+margin-top: 0;
+margin-right: 0;
+margin-left: 0;
+margin-bottom: 13px;
 text-align: left;
 }
 
@@ -961,6 +1045,16 @@ text-align: left;
 
 }
 
+.filter-item input[type="radio"]:disabled+label::before {
+  opacity: 0.3;
+
+}
+
+.filter-item input[type="radio"]:disabled+label {
+  opacity: 0.3;
+
+}
+
 .filter-item input[type="checkbox"]+label::before {
   background-image: url(../img/checkbox-on.svg);
   width: 27px;
@@ -974,6 +1068,16 @@ text-align: left;
   background-repeat: no-repeat;
 }
 
+.filter-item input[type="checkbox"]:disabled+label::before {
+  opacity: 0.3;
+
+}
+
+.filter-item input[type="checkbox"]:disabled+label {
+  opacity: 0.3;
+
+}
+
 
 .filter-item input {
   visibility: hidden;
@@ -984,6 +1088,7 @@ text-align: left;
 .range-filter {
   width: 260px;
   margin-top: 49px;
+  margin-bottom: 37px;
 }
 
 .filter-item legend {
@@ -1084,17 +1189,22 @@ text-align: left;
 .list-sorting {
   display: flex;
   list-style: none;
+  width: 360px;
+
 }
 
 .list-sorting li {
   position: relative;
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 5px;
 }
 
 .list-sorting li .icon-down::before {
   content: "";
   position: absolute;
-  top: 8px;
-  left: 1px;
+  top: 4px;
+  left: 18px;
   width: 50px;
   height: 10px;
   background-image: url("../img/icon-down-dir.svg");
@@ -1104,8 +1214,8 @@ text-align: left;
 .list-sorting li .icon-up::before {
   content: "";
   position: absolute;
-  top: 8px;
-  left: 1px;
+  top: 4px;
+  left: 18px;
   width: 50px;
   height: 10px;
   background-image: url("../img/icon-up-dir.svg");
@@ -1131,6 +1241,10 @@ text-align: left;
   width: 360px;
 }
 
+
+.catalog-item:hover {
+  box-shadow: 6px 6px 15px rgba(0, 1, 1, 0.25);
+}
 .catalog-item:nth-child(2n) {
   margin-right: 0;
 }
@@ -1368,15 +1482,17 @@ text-align: left;
 }
 
 .button-submit {
-  margin-top: -6px;
+  margin-top: 22px;
   font-size: 16px;
-padding: 10px 0; 
+  padding-top: 16px;
+  padding-bottom: 15px; 
   width: 260px;
   line-height: 18px;
   color: #000000;
   background-color: #eeeeee;
   text-transform: uppercase;
   border: none;
+  border-radius: 3px;
 }
 
 .button-submit:hover {
