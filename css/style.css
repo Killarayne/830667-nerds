@@ -498,6 +498,13 @@ input[type="radio"].visually-hidden {
   text-align: center;
 }
 
+.catalog-item-title {
+  padding-left: 90px;
+  width: 190px;
+}
+
+
+
 .catalog-list h3 {
   margin-top: 5px;
   margin-bottom: 0;
@@ -780,12 +787,16 @@ body {
   width: 300px;
 }
 
+.services-item p{
+  width: 250px;
+}
+
 .about-us {
   margin: 0;
   padding: 0;
   width: 1160px;
   display: flex;
-  margin-bottom: 80px;
+  margin-bottom:80px;
   justify-content: space-between;
   border-top: 2px solid #eeeeee;
   margin-bottom: 46px;
@@ -998,7 +1009,7 @@ body {
   padding-top: 48px;
   padding-right: 50px;
   padding-left: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 45px;
   width: 319px;
   box-sizing: border-box;
   /* learn box sizing */
@@ -1018,10 +1029,16 @@ body {
   margin-bottom: 0;
 }
 
-.address {
+.address-1 {
   line-height: 1.1;
   margin-top: 24px;
-  margin-bottom: 41px;
+  margin-bottom: 0px;
+}
+
+.address-2 {
+  line-height: 1.1;
+  margin-top: 20px;
+  margin-bottom: 38px;
 }
 
 .write-us {
@@ -1058,6 +1075,7 @@ body {
 
 .filters {
   flex-direction: flex-start;
+  position: relative;
 }
 
 .filter-item {
@@ -1080,9 +1098,7 @@ body {
 .filter-option {
   margin: 0px;
   padding: 0px;
-  
 }
-
 
 .filter-form fieldset {
 padding: 0px;
@@ -1581,6 +1597,22 @@ text-align: left;
   text-transform: uppercase;
   padding-top: 17px;
 
+}
+
+.grid legend {
+  font-size: 19px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 5px;
+}
+
+.features legend {
+  font-size: 19px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 17px;
 }
 
 .sorting span {
