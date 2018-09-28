@@ -499,10 +499,22 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item-title {
-  padding-left: 90px;
+  margin-left: auto; 
+  margin-right: auto;
   width: 190px;
 }
 
+.catalog-list li:nth-child(2) p {
+  width: 230px;
+}
+
+.catalog-list li:nth-child(5) p {
+  width: 230px;
+}
+
+.catalog-list li:nth-child(6) p {
+  width: 230px;
+}
 
 
 .catalog-list h3 {
