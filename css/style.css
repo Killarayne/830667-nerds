@@ -553,7 +553,7 @@ input[type="radio"].visually-hidden {
 .pagination-list {
   list-style: none;
   margin-bottom: 76px;
-  margin-left: 96px;
+  margin-left: 101px;
 }
 
 .pagination-list a {
@@ -1098,7 +1098,7 @@ body {
 
 .filter-option .filter-item label {
   position: relative;
-  padding-left: 35px;
+  padding-left: 30px;
   opacity: 0.6;
 }
 
@@ -1124,7 +1124,7 @@ text-align: left;
 .filter-item label::before {
   content: "";
   position: absolute;
-  left: 0px;
+  left: -4px;
   top: 0px;
   width: 25px;
   height: 25px;
@@ -1339,6 +1339,7 @@ text-align: left;
 
 .catalog-item:hover {
   box-shadow: 0 0 15px 6px rgba(0, 1, 1, 0.25);
+  border-radius: 6px;
 }
 .catalog-item:nth-child(2n) {
   margin-right: 0;
